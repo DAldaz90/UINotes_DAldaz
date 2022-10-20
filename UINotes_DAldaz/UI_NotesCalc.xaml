@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UINotes_DAldaz.UI_NotesCalc">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <!-- Vista Primera Nota -->
+
+            <Label Text="Calificaciones UIsrael" FontSize="Medium" BackgroundColor="Cornsilk"
+                                HorizontalOptions="CenterAndExpand" />
+            <Label Text="1er Parcial" FontSize="Medium" BackgroundColor="CornflowerBlue"
+                                HorizontalOptions="CenterAndExpand" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nota Seguimiento: "  Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="t_tracing_note" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Nota Examen: " Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="t_eva_note" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+
+            <Label Text="Nota 1er Parcial" Padding="30,10,30,10" FontSize="Medium" BackgroundColor="Bisque"
+                                HorizontalOptions="CenterAndExpand" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="b_info" Text="Calcular 1er Parcial" Clicked="B_info_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="t_first_grade" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+            <!-- Vista Segunda Nota -->
+
+            <Label Text="2do Parcial" FontSize="Medium" BackgroundColor="CornflowerBlue"
+                                HorizontalOptions="CenterAndExpand"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nota Seguimiento: "  Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="t_tracing_note2" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Nota Examen: " Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="t_eva_note2" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+
+            <Label Text="Nota 2do Parcial"  FontSize="Medium" BackgroundColor="Bisque"
+                                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="b_info2" Text="Calcular 2do Parcial" Clicked="B_info2_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="t_grade2" Grid.Row="0" Grid.Column="1"/>
+
+            </Grid>
+
+            <Button x:Name="b_verify" Text="Verficar Notas" Clicked="B_verify_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
