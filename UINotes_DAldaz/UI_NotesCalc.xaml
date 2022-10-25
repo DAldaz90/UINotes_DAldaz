@@ -4,7 +4,9 @@
              x:Class="UINotes_DAldaz.UI_NotesCalc">
     <ContentPage.Content>
         <StackLayout>
-            
+          
+            <Label x:Name="user" Text="" HorizontalTextAlignment="End" FontSize="8"/>
+          
             <!-- Vista Primera Nota -->
 
             <Label Text="Calificaciones UIsrael" FontSize="Medium" BackgroundColor="Cornsilk"
