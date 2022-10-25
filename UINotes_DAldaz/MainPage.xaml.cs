@@ -27,7 +27,7 @@ namespace UINotes_DAldaz
             if (user == T_User & password == T_Pass)
             {
                 DisplayAlert("Ingreso Exitoso !", "Datos Válidos !!", "Cerrar");
-                Navigation.PushAsync(new UI_NotesCalc());
+                Navigation.PushAsync(new UI_NotesCalc(user));
             }
 
             else
