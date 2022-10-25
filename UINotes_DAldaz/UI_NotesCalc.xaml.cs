@@ -15,6 +15,7 @@ namespace UINotes_DAldaz
         public UI_NotesCalc()
         {
             InitializeComponent();
+            user.Text = "Usuario conectado: " + luser;
         }
 
         private void B_info_Clicked(object sender, EventArgs e)
